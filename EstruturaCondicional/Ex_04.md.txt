@@ -1,0 +1,30 @@
+package primeiro_projeto;
+
+import java.util.Scanner;
+
+public class ex04_estrutura_condicional {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int hora_inicial;
+		int hora_final;
+		
+		System.out.println("Hora inicial: ");
+		hora_inicial = sc.nextInt();
+		
+		System.out.println("Hora_final: ");
+		hora_final = sc.nextInt();
+		
+		int duracao = 0;
+		if(hora_inicial < hora_final) {
+			duracao = hora_inicial - hora_final;
+		}
+		else if (hora_final < hora_inicial) {
+			duracao = 24 - hora_inicial + hora_final;
+		}
+		
+		System.out.println("O jogo durou "+ duracao + " Horas");
+
+	}
+
+}
